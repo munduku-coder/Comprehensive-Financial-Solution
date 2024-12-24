@@ -78,7 +78,7 @@ _**special thanks to**__
 2. International Business Science and Technology University,
 3. Fucality of information and communication technology,
 4. Mr.Kato Kenneth, for providing the class activity task.
- #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
@@ -99,16 +99,27 @@ int main()
     scanf("%f", &hours_worked);
     monthly_salary = hourly_wage * hours_worked;
     printf("\nThe monthly salary is: UGX %.2f\n", monthly_salary);
+    //Question number three: Net Salary Calculation
+    float gross_salary, tax_rate = 0.1, net_salary;
+    printf("\nEnter the gross salary (UGX): ");
+    scanf("%f", &gross_salary);
+    net_salary = gross_salary - (tax_rate * gross_salary);
+    printf("\nThe net salary is: UGX %.2f\n", net_salary);
+    //Question number four: Total Revenue Calculation
+    float price1, price2, price3, quantity1, quantity2, quantity3, total_revenue;
+    printf("\nEnter the price of item 1 (UGX): ");
+    scanf("%f", &price1);
+    printf("\nEnter the quantity sold for item 1: ");
+    scanf("%f", &quantity1);
+    printf("\nEnter the price of item 2 (UGX): ");
+    scanf("%f", &price2);
+    printf("\nEnter the quantity sold for item 2: ");
+    scanf("%f", &quantity2);
+    printf("\nEnter the price of item 3 (UGX): ");
+    scanf("%f", &price3);
+    printf("\nEnter the quantity sold for item 3: ");
+    scanf("%f", &quantity3);
+    total_revenue = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3);
+    printf("\nThe total revenue is: UGX %.2f\n", total_revenue);
     return 0;
-    }
-
-
-
-
-
-
-
-
-
-
-
+}
