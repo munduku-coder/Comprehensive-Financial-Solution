@@ -35,8 +35,8 @@ _**example of usage**_
 
   >Input: Hours_worked = 16000
 
-  >monthly_salary = 40000000  
-Each program output result based on user-provided input or predefined constants 
+  >monthly_salary = 40000000
+Each program output result based on user-provided input or predefined constants
 
 ## 5.Features of the program
 _**key features**_
@@ -78,8 +78,32 @@ _**special thanks to**__
 2. International Business Science and Technology University,
 3. Fucality of information and communication technology,
 4. Mr.Kato Kenneth, for providing the class activity task.
-   
-    
+ #include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //Question number one: Total Cost Calculation
+    float unit_price, quantity, total_cost;
+    printf("\nEnter the unit price of the item (UGX): ");
+    scanf("%f", &unit_price);
+    printf("\nEnter the quantity: ");
+    scanf("%f", &quantity);
+    total_cost = unit_price * quantity;
+    printf("\nThe total cost is: UGX %.2f\n", total_cost);
+    //Question number two: Monthly Salary Calculation
+    float hourly_wage, hours_worked, monthly_salary;
+    printf("\nEnter the hourly wage (UGX): ");
+    scanf("%f", &hourly_wage);
+    printf("\nEnter the number of hours worked in a month: ");
+    scanf("%f", &hours_worked);
+    monthly_salary = hourly_wage * hours_worked;
+    printf("\nThe monthly salary is: UGX %.2f\n", monthly_salary);
+    return 0;
+    }
+
+
+
 
 
 
